@@ -3,9 +3,9 @@ const typeDefs= gql`
 type movie @key(fields:"id"){
     id:ID!
     name:String!
-    duration:number
+    duration:Float
     genre:String
-    views:number
+    views:Float
 }
 type Query{
     movies:[movie]
